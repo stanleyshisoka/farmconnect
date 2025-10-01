@@ -12,7 +12,147 @@
       --light: #fdfdfd;
       --dark: #212121;
     }
+    /* Add this to your existing CSS, preferably at the end of the style section */
 
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+  
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .search-bar {
+    order: 2;
+    flex-grow: 1;
+    max-width: 300px;
+  }
+  
+  .lang-select {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .hero-buttons a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .analysis-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .analysis-tab {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-form input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .login-content {
+    width: 95%;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 22px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .nav-links li {
+    margin-left: 0;
+  }
+  
+  .hero {
+    padding: 30px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+  }
+  
+  .section-title h2 {
+    font-size: 22px;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+  }
+  
+  .analysis-card {
+    padding: 15px;
+  }
+  
+  .login-tabs {
+    flex-direction: column;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+  }
+  
+  .lang-select {
+    padding: 6px 8px;
+  }
+}
+
+/* Additional viewport meta tag for better mobile rendering */
+/* Add this to your head section if not already present */
+/*
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*/
     * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; scroll-behavior:smooth; }
 
     body {
@@ -907,4 +1047,5 @@
     });
   </script>
 </body>
+
 </html>
